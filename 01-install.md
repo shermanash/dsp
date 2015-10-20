@@ -37,12 +37,12 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> i installed python 2.7.10  because from what i've read people say python 2.7 is better for most tasks that may require older libraries.  you can check the version installed on an unfamiliar computer by opening the terminal or cmd and typing python at the command line it should return the version
 
 ---
 
 
-### Homebrew
+### Homebrew ###
 
 If you use a Mac, install [Homebrew](http://brew.sh/) if you don't
 have it yet. You could use Homebrew to manage your `git` and `python`
