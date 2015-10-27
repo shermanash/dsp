@@ -31,8 +31,9 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+>> I'll use vim, I started learning about vim and played through the vim-adventures.com game
+i realized that vim is amazing with the quick navigating and manipulating text; no reliance on the mouse,
+and the easy hotkey customization.
 ---
 
 
@@ -61,6 +62,11 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> i'll use vim as a graphical editor as well. vim is great because the ability to combine motions and commands means almost anything you want to do in terms of editing code can be done in two or three keystrokes.  i've added some plugins to vim such as vundle and airline, i added my old colorscheme from sublimetext and installed a text completion plugin.  some useful shortcuts are:
+:e $MYVIMRC edits vimrc file
+ciw changes current word, cis changes the sentence. 
+gg goes to top of file, G goes to bottom
+~ changes uppercase to lowercase
+i also set up my vimrc so that pressing F9 in normal mode saves and executes the current python file.
 
 ---
