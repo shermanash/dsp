@@ -31,9 +31,9 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> I'll use vim, I started learning about vim and played through the vim-adventures.com game
-i realized that vim is amazing with the quick navigating and manipulating text; no reliance on the mouse,
-and the easy hotkey customization.
+>> I'll use vim, I started learning about vim and played through the vim-adventures.com game.
+i realized that vim is amazing with the quick navigating and manipulating text; no reliance on the mouse, and easy hotkey customization.
+
 ---
 
 
