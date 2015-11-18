@@ -1,7 +1,6 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
-
 def donuts(count):
     """
     Given an int count of a number of donuts, return a string of the
@@ -18,7 +17,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        return 'Number of donuts: '+str(count)
+    else:
+        return 'Number of donuts: many'
 
 
 def both_ends(s):
@@ -37,7 +39,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        return ''
+    else: 
+        first2 = s[:2]
+        last2 = s[-2:]
+        return first2+last2
 
 
 def fix_start(s):
@@ -56,7 +63,13 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    word = s[0]
+    for x in range(1, len(s)):
+        letter = s[x]
+        if s[x] == s[0]:
+            letter = '*'
+        word = word + letter
+    return word
 
 
 def mix_up(a, b):
@@ -74,7 +87,16 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    
+    a_start = a[:2]
+    b_start = b[:2]
+    alist = list(a)
+    blist = list(b)
+    alist[:2] = b_start
+    blist[:2] = a_start
+    str_a = ''.join(alist)
+    str_b = ''.join(blist)
+    return str_a + ' ' + str_b
 
 
 def verbing(s):
@@ -91,7 +113,16 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    
+    if len(s) < 3:
+        return s
+    else:
+        if s[-3:] == 'ing':
+            new = s + 'ly'
+            return new
+        else:
+            new = s + 'ing'
+            return new
 
 
 def not_bad(s):
@@ -111,8 +142,15 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
 
+    notsub = s.find('not')
+    badsub = s.find('bad')
+    if badsub > notsub:
+        chop = s[:notsub]
+        new = chop + 'good'
+        return new
+    else:
+        return s
 
 def front_back(a, b):
     """
@@ -130,4 +168,16 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    def splitter(x):
+        if len(x) % 2 == 0: # string is even
+            xfront, xback = x[:len(x)/2], x[-len(x)/2:]
+        else:
+            xfront, xback = x[:(len(x)/2)+1], x[-(len(x)/2):]
+        return xfront, xback
+
+    afront, aback = splitter(a)
+    bfront, bback = splitter(b)
+
+    return afront+bfront+aback+bback
+
+
