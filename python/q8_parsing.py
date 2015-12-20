@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #The football.csv file contains the results from the English Premier League. 
 # The columns labeled ‘Goals’ and ‘Goals Allowed’ contain the total number of 
 # goals scored for and against each team in that season (so Arsenal scored 79 goals 
@@ -7,13 +8,29 @@
 # The below skeleton is optional.  You can use it or you can write the script with an approach of your choice.
 
 
+
 import csv
+import pandas as pd
+import numpy as np
 
-  def read_data(data):
-   # COMPLETE THIS FUNCTION
 
-  def get_min_score_difference(self, parsed_data):
-    # COMPLETE THIS FUNCTION
+csvpath = '~/ds/metis/prework/dsp/python/football.csv'
 
-  def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION
+def worst_goaldiff(csvpath):
+    # read csv to pandas dataframe
+    df = pd.read_csv(csvpath)
+    # add column to frame "goal differential"
+    df['goal_diff'] = df['Goals'] - df['Goals Allowed']
+    # sort by goal diff (doesnt return both teams in event of tie yet**)
+    df.sort_values(by = ['goal_diff'], ascending=True)
+    # get last row in the sorted frame (maybe not the best way)
+    worst_team_differential = df.tail(1)
+    return(worst_team_differential['Team'])
+
+
+print worst_goaldiff(csvpath)
+
+
+
+
+
