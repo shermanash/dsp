@@ -14,9 +14,8 @@ import pandas as pd
 import numpy as np
 
 
-csvpath = '~/ds/metis/prework/dsp/python/football.csv'
 
-def worst_goaldiff(csvpath):
+def worst_goal_diff(csvpath):
     # read csv to pandas dataframe
     df = pd.read_csv(csvpath)
     # add column to frame "goal differential"
@@ -28,7 +27,8 @@ def worst_goaldiff(csvpath):
     return(worst_team_differential['Team'])
 
 
-print worst_goaldiff(csvpath)
+# csvpath = '~/ds/metis/prework/dsp/python/football.csv'
+# print worst_goal_diff(csvpath)
 
 
 
