@@ -130,7 +130,7 @@ faculty_dict = { 'Ellenberg': [\
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> {('Feng': [[' Ph.D', 'Assistant Professor', 'ruifeng@upenn.edu']], 'Bilker': [['Ph.D.', 'Professor', 'warren@upenn.edu']],{'Putt': [[' PhD ScD', 'Professor', 'mputt@mail.med.upenn.edu']])
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -145,7 +145,8 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> see 'faculty_2.csv'
+
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
 
