@@ -1,3 +1,3 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The cohen number for total weight of first babies, versus other babies, is -0.0888.  Compared to the cohen number for pregnancy length of first babies versus others, which is 0.0289, it seems that, at a very small significance, first babies weigh slightly less than others and have slightly shorter pregnancy lengths. The difference in means for weight between firsts and others is -0.124 lbs, which is about 2 ounces.  The difference in pregnancy length of the two means is 0.078 weeks, which ( * 7 * 24), is about 13 hours.  It is unlikely that these differences are significant.
