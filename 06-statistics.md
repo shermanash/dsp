@@ -74,14 +74,16 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> to solve this, we need to divide the odds of being an identical twin, by the odds of all possible male twins.  So, we can divide (1/300) / ( ( 1/300 ) + ( 1/125 * 1/2) ).  We add up the odds of identical twins and fraternal twins on the denominator, but need to divide the odds of fraternal twins by two to only include possible male fraternal twins.  Solving the above yields .454545, or 5/11.  So the odds that Elvis' twin was identical are about 45.4%
 
 ---
 
 ###Q8. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Generally, a frequentist treats probability as intrinsic to the world, while a bayesian will update their beliefs as more data is obtained.  For example, a frequentist would say that the probability of a coin landing on tails is 1/2, regardless of who is flipping it.  However if the person flipping it is skilled at making it land on a certain side, and after a series of flips there are many more tails than heads, the bayesian may update his assumption using the series of flips to account for the fact that the coin or the flipper may not be fair, while the frequentist would likely hold on to the assumption that each flip is 50/50.
+
+>> maybe another example that applies would be in texas hold em poker when trying to calculate the odds of a hand beating another hand, when preflop.  If one player has two aces (AA) and the other player has two nines (99), the frequentist would calculate the odds of each hand winning by figuring every combination of cards that could run out and seeing which hand won on each combination.  However, to do this would require determining the winning hand for (48*47*46*45*44), about 200million situations, (52 cards minus 4 known).  The bayesian, on the other hand, might begin by running random boards, one at a time, and updating the probability of who won after each trial.  The bayesian method will obtain a probability nearly identical to the true probability much faster, after only about 10,000 trials, although in this case both would eventually arrive at the same answer- 80.9% for AA to win.
 
 ---
 
