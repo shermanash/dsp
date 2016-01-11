@@ -1,3 +1,5 @@
 [Think Stats Chapter 8 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2009.html#toc77) (scoring)
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> with sample size 10, the standard error is : 0.90, and the confidence interval is 1.3 to 3.9; with sample size 100, the standard error is .21 and the confidence interval is 1.7 to 2.4; while with a sample of 1000, the SE is 0.06 and the CI is 1.9 to 2.1.  We can see that the confidence standard error and the confidence interval width decrease a lot as the sample size increases.  This shows that the more times the experiment is repeated, the ability of the exercise to estimate lambda increases, with 1000 trials leading almost exactly to the actual value of 2.
+
+>> here is the plot of the CDF of the estimates: ![chap8_q2](https://github.com/shermanash/dsp/blob/master/img/chap8_q2.jpg)
